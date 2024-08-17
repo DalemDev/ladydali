@@ -1,0 +1,29 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+footer div::before,
+footer div::after {
+  content: "";
+  flex: 1;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  margin: 0 10px;
+}

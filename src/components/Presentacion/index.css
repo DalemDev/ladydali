@@ -1,0 +1,23 @@
+.presentation {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  font-family: "Arial", sans-serif;
+  color: white;
+  /* text-align: center; */
+}
+
+.quote {
+  font-size: 20px;
+  font-style: italic;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.author {
+  font-size: 16px;
+  color: #ffb22b;
+  margin-top: 5px;
+  text-align: left;
+}

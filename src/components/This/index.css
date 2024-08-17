@@ -1,0 +1,38 @@
+.this-container {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #343a40;
+  color: #f8f9fa;
+  padding: 8px 15px;
+  border-radius: 10px 0 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.this-title {
+  font-weight: 500;
+  margin-right: 15px;
+}
+
+.this-home-link {
+  color: #f8f9fa;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  background-color: #007bff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.this-home-link:hover {
+  background-color: #0056b3;
+}
+
+.this-icon {
+  margin-right: 5px;
+}

@@ -1,0 +1,90 @@
+.tiktoks-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 30px;
+  margin: 60px 0;
+}
+
+.tiktok-card {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tiktok-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.tiktok-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.heart-icon {
+  color: #ff4d4d;
+  font-size: 24px;
+}
+
+.tiktok-title {
+  font-size: 20px;
+  margin: 0;
+}
+
+.tiktok-description {
+  font-size: 16px;
+  color: #666;
+  margin: 10px 0;
+}
+
+.tiktok-link {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.tiktok-link:hover {
+  text-decoration: underline;
+}
+
+.adicional-links {
+  margin-top: 10px;
+}
+
+.adicional-item {
+  margin: 5px 0;
+}
+
+.adicional-link {
+  display: block;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.adicional-link:hover {
+  text-decoration: underline;
+}
+
+.adicional-button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.adicional-button:hover {
+  background-color: #0056b3;
+}
