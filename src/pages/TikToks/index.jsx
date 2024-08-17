@@ -2,7 +2,7 @@ import { FaHeart } from 'react-icons/fa';
 import './index.css';
 import SnowfallBackground from '../../components/SnowFallBackground';
 import This from '../../components/This';
-import Footer from '../../components/footer';
+import Footer from '../../components/Footer';
 
 const tiktoks = [
 	{

@@ -1,4 +1,4 @@
-import Footer from '../../components/footer';
+import Footer from '../../components/Footer';
 import SnowfallBackground from '../../components/SnowFallBackground';
 import This from '../../components/This';
 import './index.css';

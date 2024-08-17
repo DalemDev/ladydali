@@ -3,7 +3,7 @@ import This from '../../components/This';
 import primera_cita from '../../assets/videos/recuerdo_primera_cita.mp4';
 import encuentro_uni from '../../assets/videos/recuerdo_uni.mp4';
 import './index.css';
-import Footer from '../../components/footer';
+import Footer from '../../components/Footer';
 
 export default function Recuerdos() {
 	const recuerdos = [

@@ -5,7 +5,7 @@ import vide3 from '../../assets/videos/recuerdo_primera_cita.mp4';
 import vide4 from '../../assets/videos/recuerdo_primera_cita.mp4';
 import SnowfallBackground from '../../components/SnowFallBackground';
 import This from '../../components/This';
-import Footer from '../../components/footer';
+import Footer from '../../components/Footer';
 
 export default function Galeria() {
 	const items = [
