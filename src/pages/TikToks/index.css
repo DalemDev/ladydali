@@ -10,7 +10,7 @@
   position: relative;
   background-color: #ffffff;
   border-radius: 15px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   padding: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -18,7 +18,7 @@
 
 .tiktok-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
 
 .tiktok-header {
@@ -33,26 +33,10 @@
 }
 
 .tiktok-title {
-  font-size: 20px;
+  font-size: 22px;
   margin: 0;
-}
-
-.tiktok-description {
-  font-size: 16px;
-  color: #666;
-  margin: 10px 0;
-}
-
-.tiktok-link {
-  display: inline-block;
-  margin-bottom: 10px;
-  color: #007bff;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-.tiktok-link:hover {
-  text-decoration: underline;
+  font-weight: 600;
+  color: #000;
 }
 
 .adicional-links {
@@ -68,23 +52,33 @@
   color: #007bff;
   text-decoration: none;
   font-size: 14px;
+  font-weight: 500;
+  padding: 5px 0;
 }
 
 .adicional-link:hover {
   text-decoration: underline;
+  color: #0056b3;
 }
 
 .adicional-button {
   background-color: #007bff;
   color: #ffffff;
   border: none;
-  border-radius: 5px;
-  padding: 10px;
+  border-radius: 8px;
+  padding: 12px 20px;
   font-size: 14px;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .adicional-button:hover {
   background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.adicional-button:active {
+  background-color: #004080;
+  transform: translateY(0);
 }

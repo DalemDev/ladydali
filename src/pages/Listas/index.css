@@ -17,14 +17,25 @@
 .list-items {
   list-style-type: none;
   padding: 0;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .list-item {
-  margin-bottom: 20px;
   padding: 15px;
   background-color: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease;
+  width: 200px;
+}
+
+.list-item.visitado {
+  background-color: #d4edda;
 }
 
 .item-title {

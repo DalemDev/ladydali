@@ -3,16 +3,16 @@ import './index.css';
 import SnowfallBackground from '../../components/SnowFallBackground';
 import This from '../../components/This';
 import Footer from '../../components/Footer';
+import pdf_para_mi_nina from '../../assets/pdf/Para mi niña preciosa.pdf';
 
 const tiktoks = [
 	{
-		title: "Nuestro primer TikTok",
-		description: "Un momento especial capturado en video.",
-		link: "https://www.tiktok.com/@example/video/123456789",
+		title: "Nuestro bello click",
+		link: "https://vm.tiktok.com/ZMrt33YbJ/",
 		adicional: [
 			{
-				title: "PDF de amor",
-				link: "/path/to/love.pdf",
+				title: "Descarga el pdf",
+				link: pdf_para_mi_nina,
 				type: "download"
 			}
 		]
@@ -29,10 +29,8 @@ export default function TikToks() {
 					<div key={index} className="tiktok-card">
 						<div className="tiktok-header">
 							<FaHeart className="heart-icon" />
-							<h2 className="tiktok-title">{item.title}</h2>
+							<a className="tiktok-title" href={item.link} target="_blank" rel="noopener noreferrer">{item.title}</a>
 						</div>
-						<p className="tiktok-description">{item.description}</p>
-						<a href={item.link} target="_blank" rel="noopener noreferrer" className="tiktok-link">Ver en TikTok</a>
 						<div className="adicional-links">
 							{item.adicional.map((extra, i) => (
 								<div key={i} className="adicional-item">
