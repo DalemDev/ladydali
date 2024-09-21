@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+
+.container_login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.form {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(255, 0, 0, 0.3);
+  width: 350px;
+  border: 2px solid #e57373;
+}
+
+.form h2 {
+  color: #e57373;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e57373;
+  text-align: center;
+}
+
+.inputGroup {
+  margin-bottom: 20px;
+  color: #ffb22b;
+  text-align: left;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ffb22b;
+  border-radius: 10px;
+  margin-top: 8px;
+  font-size: 1rem;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.button {
+  width: 100%;
+  padding: 12px;
+  background-color: #e57373;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #d32f2f;
+}
+
+.form {
+  animation: appear 0.8s ease-in-out;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+label {
+  color: #ffb22b;
+}
