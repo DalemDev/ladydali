@@ -52,3 +52,11 @@ export const mostrarCargando = () => {
 export const ocultarCargando = () => {
 	document.querySelector('.loader-overlay').classList.remove('active');
 };
+
+export const getUser = () => {
+	const user = JSON.parse(localStorage.getItem('user'));
+
+	if (!user?.autenticado) throw new Error('Usuario no autenticado');
+
+	return user;
+}

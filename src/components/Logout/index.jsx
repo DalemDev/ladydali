@@ -1,4 +1,4 @@
-import { useAuth } from "../../firebase/AuthContext";
+import { useAuth } from "../../firebase/Auth/AuthContext";
 import './index.css';
 
 export default function index() {

@@ -1,21 +1,20 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
+import App from './pages/App.jsx'
 import NotFound from './components/404';
-import Recuerdos from './pages/Recuerdos/index.jsx';
-import Galeria from './pages/Galeria/index.jsx';
 import TikToks from './pages/TikToks/index.jsx';
 import Listas from './pages/Listas/index.jsx';
+import Links from './pages/Links/index.jsx';
 import Login from './pages/Login/index.jsx';
 import DiaEspecial from './pages/Especial/index.jsx';
 import FloresAmarillas from './pages/Especial/pages/FloresAmarillas/index.jsx';
 import RosaEterna from './pages/Especial/pages/Eterno/index.jsx';
 import ProtectedRoute from './firebase/ProtectedRoute.jsx';
-import { ToastContainer } from 'react-toastify';
-import { AuthProvider } from './firebase/AuthContext.jsx';
-import 'react-toastify/dist/ReactToastify.css';
-import './index.css'
 import Loader from './components/Loader/index.jsx';
+import { ToastContainer } from 'react-toastify';
+import { AuthProvider } from './firebase/Auth/AuthContext.jsx';
+import 'react-toastify/dist/ReactToastify.css';
+import './css/index.css'
 
 const router = createBrowserRouter([
   {
@@ -27,12 +26,8 @@ const router = createBrowserRouter([
     element: <ProtectedRoute element={<App />} />,
   },
   {
-    path: '/recuerdos',
-    element: <ProtectedRoute element={<Recuerdos />} />,
-  },
-  {
-    path: '/galeria',
-    element: <ProtectedRoute element={<Galeria />} />,
+    path: '/links',
+    element: <ProtectedRoute element={<Links />} />,
   },
   {
     path: '/tiktoks',

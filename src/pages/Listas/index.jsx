@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import Footer from '../../components/Footer';
 import SnowfallBackground from '../../components/SnowFallBackground';
 import This from '../../components/This';
-import { createItem, deleteItem, getListas, updateVisitado } from '../../firebase/ListasController';
+import { createItem, deleteItem, getListas, updateVisitado } from '../../firebase/Listas/ListasController';
 import { formatTitle, mostrarCargando, notify, ocultarCargando } from '../../helpers/index';
 import './index.css';
 

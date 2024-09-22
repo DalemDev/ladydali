@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { mostrarCargando, notify, ocultarCargando } from '../../helpers/index';
-import { loginWithFirestore } from '../../firebase/AuthController';
+import { loginWithFirestore } from '../../firebase/Auth/AuthController';
 import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../../firebase/Auth/AuthContext';
 import './index.css';
-import { useAuth } from '../../firebase/AuthContext';
 
 export default function Login() {
 	const [user, setUser] = useState('');
