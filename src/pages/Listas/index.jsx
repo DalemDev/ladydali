@@ -64,7 +64,7 @@ export default function Listas() {
 		});
 	};
 
-	const handleItemClick = (item) => {
+	const handleVisited = (item) => {
 		mostrarCargando();
 
 		updateVisitado(item.tipo, item.title).then(response => {
@@ -121,7 +121,7 @@ export default function Listas() {
 		<>
 			<SnowfallBackground />
 			<This title="Listas" />
-			<div className="listas-container">
+			<div className="container container_listas">
 				<div className="acciones">
 					<button className='btn-nuevo' onClick={toggleForm}>Nuevo</button>
 				</div>
@@ -162,7 +162,7 @@ export default function Listas() {
 											value={link.link}
 											onChange={(e) => handleLinkChange(e, index)}
 										/>
-										<button className='btn-eliminar' onClick={() => removeLink(index)}>Eliminar</button>
+										{index > 0 && <button className='btn-eliminar' onClick={() => removeLink(index)}>Eliminar</button>}
 									</div>
 								))}
 								<button className='btn-agregar' onClick={addNewLink}>Agregar otro link</button>
@@ -195,7 +195,7 @@ export default function Listas() {
 							<ul className="list-items">
 								{data[key].map((item, index) => (
 									<li key={index} className={`list-item ${item?.visitado ? 'visitado' : ''}`}>
-										{item.title && <h2 className="item-title">{item.title}</h2>}
+										{item.title && <h2 className="item-title">{formatTitle(item.title)}</h2>}
 										{item.link && <a href={item.link} target="_blank" rel="noopener noreferrer" className="item-link">Ver más</a>}
 										{item.links && (
 											<>
@@ -216,7 +216,7 @@ export default function Listas() {
 													})} className='accion-item-link'>
 														Eliminar
 													</button>
-													<button onClick={() => handleItemClick({
+													<button onClick={() => handleVisited({
 														...item,
 														tipo: key
 													})} className="visitado-btn">

@@ -9,7 +9,7 @@ export default function index() {
 
 			<This title="Rosa eterna" />
 
-			<div className="container_rose">
+			<div>
 				<div className="thorns">
 					<div></div>
 					<div></div>
@@ -39,7 +39,7 @@ export default function index() {
 				</div>
 			</div>
 
-			<h4 className="texto">Mi amor por ti durará hasta que caiga el último pétalo mi preciosa ❤️</h4>
+			<h4 className="texto_eterno">Mi amor por ti durará hasta que caiga el último pétalo mi preciosa ❤️</h4>
 		</>
 	)
 }

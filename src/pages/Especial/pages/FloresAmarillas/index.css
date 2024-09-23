@@ -73,7 +73,6 @@
 @media only screen and (max-width: 600px) {
   .flowers {
     font-size: 14px;
-    /* margin-bottom: 35%; */
     letter-spacing: 3px;
     transform: scale(1);
   }
@@ -81,7 +80,6 @@
 
 .flower {
   position: absolute;
-  /* bottom: 10vmin; */
   transform-origin: bottom center;
   z-index: 10;
   --fl-speed: 0.8s;
@@ -245,8 +243,6 @@
 .flower__white-circle::after {
   content: "";
   position: absolute;
-  /* left: 50%; */
-  /* top: 45%; */
   transform: translate(-50%, -50%);
   width: 60%;
   height: 60%;
@@ -1562,37 +1558,27 @@
     transform: scale(0);
   }
 }
-.container * {
-  -webkit-animation-play-state: paused !important;
-  animation-play-state: paused !important;
-}
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-h1 {
+.title_flores {
   font-size: 2em;
   line-height: 1.5;
   margin-bottom: 20px;
 }
 
 @media screen and (max-width: 600px) {
-  h1 {
+  .title_flores {
     font-size: 1.5em;
   }
 }
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-  h1 {
+  .title_flores {
     font-size: 1.8em;
   }
 }
 
 @media screen and (min-width: 1025px) {
-  h1 {
+  .title_flores {
     font-size: 2em;
   }
 }

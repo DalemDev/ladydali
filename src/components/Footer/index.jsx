@@ -2,7 +2,7 @@ import './index.css';
 
 export default function Footer() {
 	return (
-		<footer>
+		<footer className='footer'>
 			<div>Con mucho amor de Dali ❤️</div>
 		</footer>
 	);

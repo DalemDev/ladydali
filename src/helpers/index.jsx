@@ -42,7 +42,11 @@ export const notify = (message = '', type = '', properties = {}) => {
 };
 
 export const formatTitle = (str) => {
-	return str.replace(/_/g, ' ').replace(/^\w/, c => c.toUpperCase());
+	return str
+		.replace(/_/g, ' ')
+		.split(' ')
+		.map(word => word.charAt(0).toUpperCase() + word.slice(1))
+		.join(' ');
 };
 
 export const mostrarCargando = () => {
@@ -60,3 +64,11 @@ export const getUser = () => {
 
 	return user;
 }
+
+export const obtenerFechaActual = () => {
+	const fecha = new Date();
+	const dia = String(fecha.getDate()).padStart(2, '0');
+	const mes = String(fecha.getMonth() + 1).padStart(2, '0');
+	const anio = fecha.getFullYear();
+	return `${dia}-${mes}-${anio}`;
+};

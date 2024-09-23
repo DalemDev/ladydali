@@ -93,41 +93,6 @@
   animation-fill-mode: forwards;
 }
 
-/* .deadPetals > div {
-  position: absolute;
-  background: #d52d58;
-  width: 20px;
-  height: 15px;
-  top: 200px;
-  border-radius: 0px 30px 0px 30px;
-  box-shadow: 0px 0px 30px rgba(245, 148, 184, 0.5);
-  transition: all 0.5s ease-out;
-} */
-
-/* .deadPetals > div:nth-child(1) {
-  left: 50px;
-  transform: rotate(-30deg);
-  animation: falling 20s 4s ease-in-out infinite;
-} */
-
-/* .deadPetals > div:nth-child(2) {
-  left: 100px;
-  transform: rotate(-30deg);
-  animation: falling 20s 8s ease-in-out infinite;
-}
-
-.deadPetals > div:nth-child(3) {
-  left: 150px;
-  transform: rotate(-30deg);
-  animation: falling 20s 12s ease-in-out infinite;
-}
-
-.deadPetals > div:nth-child(4) {
-  left: 200px;
-  transform: rotate(-30deg);
-  animation: falling 20s 16s ease-in-out infinite;
-} */
-
 .leaves > div:nth-last-child(1) {
   position: absolute;
   width: 55px;
@@ -275,7 +240,7 @@
   }
 }
 
-.texto {
+.texto_eterno {
   color: white;
   font-size: 18px;
   z-index: 1000000;

@@ -9,7 +9,7 @@ export default function index() {
 
 			<div className="special-day-container">
 				<div className="message-container">
-					<h1>🌼 ¡Hoy es el día de las flores amarillas! 🌼</h1>
+					<h1 className='title_flores'>🌼 ¡Hoy es el día de las flores amarillas! 🌼</h1>
 					<p>Te quiero mucho, espero que este día sea tan especial como tú 💛</p>
 				</div>
 			</div>

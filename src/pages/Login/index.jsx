@@ -40,31 +40,31 @@ export default function Login() {
 
 	return (
 		<div className="container_login">
-			<form onSubmit={handleSubmit} className="form">
+			<form onSubmit={handleSubmit} className="form_login">
 				<h2>❤️ Inicia Sesión ❤️</h2>
-				<div className="inputGroup">
-					<label htmlFor="user">Usuario:</label>
+				<div className="inputGroup_login">
+					<label htmlFor="user" className='label_login'>Usuario:</label>
 					<input
 						type="text"
 						id="user"
 						value={user}
 						onChange={(e) => setUser(e.target.value)}
 						required
-						className="input"
+						className="input_login"
 					/>
 				</div>
-				<div className="inputGroup">
-					<label htmlFor="password">Password:</label>
+				<div className="inputGroup_login">
+					<label htmlFor="password" className='label_login'>Password:</label>
 					<input
 						type="password"
 						id="password"
 						value={password}
 						onChange={(e) => setPassword(e.target.value)}
 						required
-						className="input"
+						className="input_login"
 					/>
 				</div>
-				<button type="submit" className="button">Ingresar</button>
+				<button type="submit" className="button button_login">Ingresar</button>
 			</form>
 		</div>
 	);

@@ -5,7 +5,7 @@ export default function index() {
 	const { logout } = useAuth();
 
 	return (
-		<button className="logout-button" onClick={logout}>
+		<button className="button button_logout" onClick={logout}>
 			Cerrar Sesión
 		</button>
 	)

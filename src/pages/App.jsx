@@ -1,8 +1,8 @@
 import Footer from "../components/Footer";
 import Menu from "../components/Menu";
 import Presentacion from "../components/Presentacion";
-import SnowfallBackground from "../components/SnowFallBackground";
 import Logout from '../components/Logout';
+import SnowfallBackground from "../components/SnowFallBackground";
 
 function App() {
 
@@ -11,7 +11,7 @@ function App() {
       <Logout />
       <SnowfallBackground />
 
-      <div className="main-content">
+      <div className="container">
         <Presentacion />
         <Menu />
       </div>
